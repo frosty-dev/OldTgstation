@@ -73,14 +73,13 @@
 	var/te = n
 	var/t = ""
 	n = length_char(n)
-	var/p = null
-	p = 1
-	while(p <= n)
+	for(var/p = 1 to min(n, MAX_BROADCAST_LEN))
 		if ((copytext_char(te, p, p + 1) == " " || prob(pr)))
 			t = text("[][]", t, copytext_char(te, p, p + 1))
 		else
 			t = text("[]*", t)
-		p++
+	if (n > MAX_BROADCAST_LEN)
+		t += "..." //rest of the text
 	return sanitize(t)
 
 /proc/slur(n)

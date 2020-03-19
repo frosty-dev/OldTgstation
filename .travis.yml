@@ -2,8 +2,8 @@ language: generic
 sudo: false
 env:
     global:
-    - BYOND_MAJOR="511"
-    - BYOND_MINOR="1380"
+    - BYOND_MAJOR="513"
+    - BYOND_MINOR="1515"
     - NODE_VERSION="4"
     - BUILD_TOOLS=false
     - BUILD_TESTING=false

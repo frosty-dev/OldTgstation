@@ -26,7 +26,7 @@
 		to_chat(usr, "You seem to be selecting a mob that doesn't exist anymore.")
 		return
 
-	var/body = "<html><head><title>Options for [M.key]</title></head>"
+	var/body = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Options for [M.key]</title></head>"
 	body += "<body>Options panel for <b>[M]</b>"
 	if(M.client)
 		body += " played by <b>[M.client]</b> "
@@ -187,7 +187,7 @@
 		to_chat(usr, "Error: you are not an admin!")
 		return
 	var/dat
-	dat = text("<HEAD><TITLE>Admin Newscaster</TITLE></HEAD><H3>Admin Newscaster Unit</H3>")
+	dat = text("<HEAD><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><TITLE>Admin Newscaster</TITLE></HEAD><H3>Admin Newscaster Unit</H3>")
 
 	switch(admincaster_screen)
 		if(0)
@@ -736,7 +736,7 @@
 /datum/admins/proc/manage_free_slots()
 	if(!check_rights())
 		return
-	var/dat = "<html><head><title>Manage Free Slots</title></head><body>"
+	var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Manage Free Slots</title></head><body>"
 	var/count = 0
 
 	if(!SSticker.HasRoundStarted())

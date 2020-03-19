@@ -27,7 +27,7 @@ GLOBAL_LIST_INIT(message_servers, list())
 	if(href_list["photo"])
 		var/mob/M = usr
 		M << browse_rsc(photo, "pda_photo.png")
-		M << browse("<html><head><title>PDA Photo</title></head>" \
+		M << browse("<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>PDA Photo</title></head>" \
 		+ "<body style='overflow:hidden;margin:0;text-align:center'>" \
 		+ "<img src='pda_photo.png' width='192' style='-ms-interpolation-mode:nearest-neighbor' />" \
 		+ "</body></html>", "window=book;size=192x192")

@@ -50,7 +50,7 @@
 
 	user.set_machine(src)
 	var/dat
-	dat = "<font face = \"Courier\"><HEAD><TITLE>[name]</TITLE></HEAD><center><H3>[name] Access</H3></center>"
+	dat = "<font face = \"Courier\"><HEAD><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><TITLE>[name]</TITLE></HEAD><center><H3>[name] Access</H3></center>"
 	dat += "<br>[temp]<br>"
 	dat += "<br>Power Status: <a href='?src=\ref[src];input=toggle'>[toggled ? "On" : "Off"]</a>"
 	if(on && toggled)

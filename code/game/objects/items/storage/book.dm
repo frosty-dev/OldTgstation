@@ -38,7 +38,7 @@ GLOBAL_LIST_INIT(bibleitemstates, list("bible", "koran", "scrapbook", "bible",  
 		return
 	// If H is the Chaplain, we can set the icon_state of the bible (but only once!)
 	if(!SSreligion.bible_icon_state && H.job == "Chaplain")
-		var/dat = "<html><head><title>Pick Bible Style</title></head><body><center><h2>Pick a bible style</h2></center><table>"
+		var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Pick Bible Style</title></head><body><center><h2>Pick a bible style</h2></center><table>"
 		for(var/i in 1 to GLOB.biblestates.len)
 			var/icon/bibleicon = icon('icons/obj/storage.dmi', GLOB.biblestates[i])
 			var/nicename = GLOB.biblenames[i]

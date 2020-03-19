@@ -22,7 +22,7 @@
 
 /obj/item/areaeditor/attack_self(mob/user)
 	add_fingerprint(user)
-	var/text = "<BODY><HTML><head><title>[src]</title></head> \
+	var/text = "<BODY><HTML><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>[src]</title></head> \
 				<h2>[station_name()] [src.name]</h2> \
 				<small>[fluffnotice]</small><hr>"
 	switch(get_area_type())

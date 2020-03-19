@@ -266,7 +266,7 @@
 			stat(null, text("Systems nonfunctional"))
 
 /mob/living/silicon/ai/proc/ai_alerts()
-	var/dat = "<HEAD><TITLE>Current Station Alerts</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
+	var/dat = "<HEAD><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><TITLE>Current Station Alerts</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
 	dat += "<A HREF='?src=\ref[src];mach_close=aialerts'>Close</A><BR><BR>"
 	for (var/cat in alarms)
 		dat += text("<B>[]</B><BR>\n", cat)
@@ -299,7 +299,7 @@
 	src << browse(dat, "window=aialerts&can_close=0")
 
 /mob/living/silicon/ai/proc/ai_roster()
-	var/dat = "<html><head><title>Crew Roster</title></head><body><b>Crew Roster:</b><br><br>"
+	var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Crew Roster</title></head><body><b>Crew Roster:</b><br><br>"
 
 	dat += GLOB.data_core.get_manifest()
 	dat += "</body></html>"

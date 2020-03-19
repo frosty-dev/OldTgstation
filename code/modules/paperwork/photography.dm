@@ -63,7 +63,7 @@
 
 /obj/item/photo/proc/show(mob/user)
 	user << browse_rsc(img, "tmp_photo.png")
-	user << browse("<html><head><title>[name]</title></head>" \
+	user << browse("<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>[name]</title></head>" \
 		+ "<body style='overflow:hidden;margin:0;text-align:center'>" \
 		+ "<img src='tmp_photo.png' width='192' style='-ms-interpolation-mode:nearest-neighbor' />" \
 		+ "[scribble ? "<br>Written on the back:<br><i>[scribble]</i>" : ""]"\

@@ -61,7 +61,7 @@ a.updated {
 	color: red;
 }
 </style>"}
-	var/dat = "<html><head><title>[station_name()] Stock Exchange</title>[css]</head><body>"
+	var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>[station_name()] Stock Exchange</title>[css]</head><body>"
 
 	dat += "<span class='user'>Welcome, <b>[station_name()] Cargo Department</b></span><br><span class='balance'><b>Credits:</b> [balance()] </span><br>"
 	for (var/datum/stock/S in GLOB.stockExchange.last_read)
@@ -275,7 +275,7 @@ a.updated {
 			sell_some_shares(S, usr)
 
 	if (href_list["show_logs"])
-		var/dat = "<html><head><title>Stock Transaction Logs</title></head><body><h2>Stock Transaction Logs</h2><div><a href='?src=\ref[src];show_logs=1'>Refresh</a></div><br>"
+		var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Stock Transaction Logs</title></head><body><h2>Stock Transaction Logs</h2><div><a href='?src=\ref[src];show_logs=1'>Refresh</a></div><br>"
 		for(var/D in GLOB.stockExchange.logs)
 			var/datum/stock_log/L = D
 			if(istype(L, /datum/stock_log/buy))
@@ -297,7 +297,7 @@ a.updated {
 		if (logged_in && logged_in != "")
 			var/list/LR = GLOB.stockExchange.last_read[S]
 			LR[logged_in] = world.time
-		var/dat = "<html><head><title>News feed for [S.name]</title></head><body><h2>News feed for [S.name]</h2><div><a href='?src=\ref[src];archive=\ref[S]'>Refresh</a></div>"
+		var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>News feed for [S.name]</title></head><body><h2>News feed for [S.name]</h2><div><a href='?src=\ref[src];archive=\ref[S]'>Refresh</a></div>"
 		dat += "<div><h3>Events</h3>"
 		var/p = 0
 		for (var/datum/stockEvent/E in S.events)

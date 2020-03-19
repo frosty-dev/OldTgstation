@@ -47,7 +47,7 @@
 			dat += "<A href='?src=\ref[src];read=\ref[P]'>[P.name]</A> [auth ? "<A href='?src=\ref[src];write=\ref[P]'>Write</A> <A href='?src=\ref[src];remove=\ref[P]'>Remove</A>" : ""]<BR>"
 		else
 			dat += "<A href='?src=\ref[src];read=\ref[P]'>[P.name]</A> [auth ? "<A href='?src=\ref[src];remove=\ref[P]'>Remove</A>" : ""]<BR>"
-	user << browse("<HEAD><TITLE>Notices</TITLE></HEAD>[dat]","window=noticeboard")
+	user << browse("<HEAD><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><TITLE>Notices</TITLE></HEAD>[dat]","window=noticeboard")
 	onclose(user, "noticeboard")
 
 /obj/structure/noticeboard/Topic(href, href_list)

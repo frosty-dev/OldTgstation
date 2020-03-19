@@ -619,9 +619,9 @@
 
 /obj/item/spellbook/proc/wrap(content)
 	var/dat = ""
-	dat +="<html><head><title>Spellbook</title></head>"
+	dat +="<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Spellbook</title></head>"
 	dat += {"
-	<head>
+	<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 		<style type="text/css">
       		body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
       		ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }

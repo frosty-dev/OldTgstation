@@ -12,7 +12,7 @@
 	author = "Engineering Encyclopedia"		 // Who wrote the thing, can be changed by pen or PC. It is not automatically assigned
 	title = "Particle Accelerator User's Guide"
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -55,7 +55,7 @@
 //big pile of shit below.
 
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -101,7 +101,7 @@
 	author = "Farmer John"
 	title = "The Human Harvest - From seed to market"
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -138,7 +138,7 @@
 //big pile of shit below.
 
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -216,7 +216,7 @@
 //big pile of shit below.
 
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -289,7 +289,7 @@
 	author = "Dr. H.P. Kritz"
 	title = "Mentoring your Experiments"
 	dat = {"<html>
-		<head>
+		<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 		<style>
 		h1 {font-size: 18px; margin: 15px 0px 5px;}
 		h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -421,7 +421,7 @@
 	author = "Dr. L. Ight"
 	title = "Research and Development 101"
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -471,7 +471,7 @@
 	author = "XISC"
 	title = "Cyborgs for Dummies"
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 21px; margin: 15px 0px 5px;}
 				h2 {font-size: 18px; margin: 15px 0px 5px;}
@@ -664,7 +664,7 @@
 	author = "Lord Frenrir Cageth"
 	title = "Chef Recipes"
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -746,7 +746,7 @@
 	author = "Sir John Rose"
 	title = "Barman Recipes"
 	dat = {"<html>
-				<head>
+				<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -799,7 +799,7 @@
 	author = "Nanotrasen"
 	title = "The Film Noir: Proper Procedures for Investigations"
 	dat = {"<html>
-			<head>
+			<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 			<style>
 			h1 {font-size: 18px; margin: 15px 0px 5px;}
 			h2 {font-size: 15px; margin: 15px 0px 5px;}
@@ -886,7 +886,7 @@
 	if(wikiurl)
 		dat = {"
 
-			<html><head>
+			<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 			<style>
 				iframe {
 					display: none;

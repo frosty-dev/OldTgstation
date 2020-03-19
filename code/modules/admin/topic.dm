@@ -606,7 +606,7 @@
 			to_chat(usr, "This mob has no ckey.")
 			return
 
-		var/dat = "<head><title>Job-Ban Panel: [key_name(M)]</title></head>"
+		var/dat = "<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Job-Ban Panel: [key_name(M)]</title></head>"
 
 	/***********************************WARNING!************************************
 				      The jobban stuff looks mangled and disgusting

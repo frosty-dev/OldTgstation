@@ -90,7 +90,7 @@ FLOOR SAFES
 			var/obj/item/P = contents[i]
 			dat += "<tr><td><a href='?src=\ref[src];retrieve=\ref[P]'>[P.name]</a></td></tr>"
 		dat += "</table></center>"
-	user << browse("<html><head><title>[name]</title></head><body>[dat]</body></html>", "window=safe;size=350x300")
+	user << browse("<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>[name]</title></head><body>[dat]</body></html>", "window=safe;size=350x300")
 
 
 /obj/structure/safe/Topic(href, href_list)

@@ -1,12 +1,12 @@
 /datum/admins/proc/player_panel_new()//The new one
 	if(!check_rights())
 		return
-	var/dat = "<html><head><title>Player Panel</title></head>"
+	var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Player Panel</title></head>"
 
 	//javascript, the part that does most of the work~
 	dat += {"
 
-		<head>
+		<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 			<script type='text/javascript'>
 
 				var locked_tabs = new Array();
@@ -311,7 +311,7 @@
 
 /datum/admins/proc/check_antagonists()
 	if (SSticker.HasRoundStarted())
-		var/dat = "<html><head><title>Round Status</title></head><body><h1><B>Round Status</B></h1>"
+		var/dat = "<html><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><title>Round Status</title></head><body><h1><B>Round Status</B></h1>"
 		if(SSticker.mode.replacementmode)
 			dat += "Former Game Mode: <B>[SSticker.mode.name]</B><BR>"
 			dat += "Replacement Game Mode: <B>[SSticker.mode.replacementmode.name]</B><BR>"

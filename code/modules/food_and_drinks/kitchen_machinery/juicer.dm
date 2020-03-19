@@ -108,7 +108,7 @@
 		dat += "<A href='?src=\ref[src];action=juice'>Turn on!<BR>"
 	if (beaker)
 		dat += "<A href='?src=\ref[src];action=detach'>Detach the container!<BR>"
-	user << browse("<HEAD><TITLE>Juicer</TITLE></HEAD><TT>[dat]</TT>", "window=juicer")
+	user << browse("<HEAD><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/><TITLE>Juicer</TITLE></HEAD><TT>[dat]</TT>", "window=juicer")
 	onclose(user, "juicer")
 	return
 

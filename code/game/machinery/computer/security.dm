@@ -68,7 +68,7 @@
 					//search bar javascript
 					dat += {"
 
-		<head>
+		<head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
 			<script src="jquery.min.js"></script>
 			<script type='text/javascript'>
 

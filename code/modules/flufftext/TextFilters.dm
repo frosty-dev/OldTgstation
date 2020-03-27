@@ -46,9 +46,8 @@
 	if(chance >= 100)
 		return original_msg
 
-	var/list
-		words = splittext_char(original_msg," ")
-		new_words = list()
+	var/list/words = splittext_char(original_msg," ")
+	var/new_words = list()
 
 	var/new_msg = ""
 

@@ -206,7 +206,7 @@
 			kill_objective.find_target()
 			add_objective(kill_objective)
 	else
-		if(prob(15) && !(locate(/datum/objective/download in owner.objectives)))
+		if(prob(15) && !(locate(/datum/objective/download) in owner.objectives))
 			var/datum/objective/download/download_objective = new
 			download_objective.owner = owner
 			download_objective.gen_amount_goal()
